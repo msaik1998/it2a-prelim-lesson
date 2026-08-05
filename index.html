@@ -3,134 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLTECH - IT2A</title>
-
+    <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
-        h2 {
-            color: red;
-        }
-
-        img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50% 20px;
-        }
-    </style>
 </head>
 <body>
-    <h1 style="font-size: 18px;">Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6 style="font-size: 60px; color: #000; display: none">Heading 6</h6>
+    <header class="header">
+        <a href="#" class="logo">IT2A</a>
 
-    <hr />
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="navlink">Home</a>
+            <a href="#about" class="navlink">About</a>
+            <a href="#" class="navlink">Skills</a>
+            <a href="#" class="navlink">Education</a>
+            <a href="#" class="navlink">Contact</a>
+        </nav>
 
-    <p><b>Lorem ipsum</b> dolor sit amet consectetur adipisicing elit. <br /><i>Rerum voluptates dolorem</i> unde asperiores harum, quos aut debitis odit eligendi voluptas!</p>
+        <button id="openMenu">
+            <i class="fa-solid fa-bars">
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sunt delectus molestiae reiciendis? Expedita voluptate suscipit nostrum eos nesciunt. Ratione.</p>
+            </i>
+        </button>
+        <button id="closeMenu">
+            <i class="fa-solid fa-close"></i>
+        </button>
+    </header>
 
-    <img src="https://images.pexels.com/photos/38618584/pexels-photo-38618584.jpeg"  alt="Profile Pic">
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Platform Technology</h1>
+            <h2>IT2A Subject</h2>
+            <p>A step-by-step guide for designing, building, deploying, and maintaining modern web and cloud-based applications — from Git and React to APIs, databases, and production deployment.</p>
+        </div>
 
-    <video src="pltech-activity1.mov" width="400" height="300" controls></video>
+        <img src="https://greedy-seal-281.convex.cloud/api/storage/84331a52-fc01-449b-8a63-9a834ded5262" alt="">
+    </section>
 
-    <video width="400" height="300" controls>
-        <source src="pltech-activity1.mov">
-    </video>
+    <section class="about" id="about">
+        <h3 class="title">About Me</h3>
 
-    <audio src="pltech-activity1.mov" width="400" height="300" controls></audio>
+        <div class="about-content">
+            <h1>Antok Ako</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit facilis nam cupiditate, consequuntur quidem molestias suscipit quasi autem impedit? Dignissimos temporibus optio totam assumenda sequi? Assumenda quo eos voluptas hic?</p>
 
-    <audio width="400" height="300" controls>
-        <source src="pltech-activity1.mov">
-    </audio>
-
-    <form>
-        <label>Name</label>
-        <input type="text"> <br>
-        <label>Password</label>
-        <input type="password">
-        <br>
-        <button>Button 1</button><br>
-        <input type="button" value="Button2">
-    </form>
-
-    <ul>
-        <li>Apple</li>
-        <li>Orange</li>
-        <ul>
-            <li>Orange 2</li>
-            <li>Orange 3</li>
-        </ul>
-        <li>Banana</li>
-        <li>Grapes</li>
-    </ul>
-
-    <ol>
-        <li>Apple</li>
-        <li>Orange</li>
-        <ul>
-            <li>Orange 2</li>
-            <li>Orange 3</li>
-        </ul>
-        <li>Banana</li>
-        <li>Grapes</li>
-    </ol>
-
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Age</th>
-                <th>School</th>
-                <th>Email</th>
-                <th>Student ID</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Marvin Siao</td>
-                <td>16</td>
-                <td>FBC</td>
-                <td>codewithxiao@gmail.com</td>
-                <td>2101010020</td>
-            </tr>
-        </tbody>
-    </table>
+            <button class="btn">Learn More</button>
+        </div>
+    </section>
 
 
-
-
-
-
-
-
-
-
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <script src="script.js"></script>
 </body>
 </html>
